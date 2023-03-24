@@ -1,4 +1,5 @@
 {
+  "git": "Link on Git",
   "welcome": "Привет {name}",
   "back_btn": "Назад",
   "home_title": "Главная",

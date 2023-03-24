@@ -1,4 +1,5 @@
 {
+  "git": "Ссылка на Git",
   "welcome": "Welcome {name}",
   "back_btn": "Go back",
   "home_title": "Home",

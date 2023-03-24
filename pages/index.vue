@@ -7,6 +7,7 @@
         <div>
           <div>{{ content }}</div>
           <v-btn type="button" color="primary" @click="refresh">Refresh</v-btn>
+          <a href="https://github.com/MerantauWarrior/nuxt" target="_blank">Link on Git</a>
         </div>
       </v-card>
     </v-col>
