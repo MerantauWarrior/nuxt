@@ -3,5 +3,5 @@ services:
     name: nuxt-example
     env: node
     plan: free
-    buildCommand: npm; npm run build
+    buildCommand: npm install; npm run build
     startCommand: npm run start
