@@ -1,6 +1,27 @@
 import colors from 'vuetify/es5/util/colors'
 
+// import axios from 'axios'
+// let dynamicRoutes = async () => {
+//   let her = await axios.get('https://rickandmortyapi.com/api/character').then(res => {
+//     let result = res.data.results.map(i => `heroes/${i.id}`)
+//     console.log(result)
+//     return result
+//   })
+//   let eps = await axios.get('https://rickandmortyapi.com/api/episode').then(res => {
+//     let result = res.data.results.map(i => `episodes/${i.id}`)
+//     console.log(result)
+//     return result
+//   })
+//   console.log(her)
+//   console.log(eps)
+//   return [...her, ...eps]
+// }
+
 export default {
+  // target: 'static',
+  // generate: {
+  //   routes: dynamicRoutes
+  // },
   loading: '@/components/LoadingBar.vue',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

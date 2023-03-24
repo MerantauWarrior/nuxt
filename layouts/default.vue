@@ -105,6 +105,7 @@
           </v-list-item-action>
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
+        <!--          :to="localeRoute({name: 'heroes-id', params: {id: fHero.id}})"-->
         <v-list-item
           v-for="fHero in favoriteHeroes"
           :key="fHero.id"
