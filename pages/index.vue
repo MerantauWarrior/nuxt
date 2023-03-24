@@ -1,13 +1,14 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-card>
+      <v-card class="py-4 px-4">
         <h1 class="text-center"><span>SCSS + {{$t("welcome", { name: "myName" })}}</span></h1>
         <h2>I am rendered on the {{ renderedOn }} side</h2>
         <div>
           <div>{{ content }}</div>
           <v-btn type="button" color="primary" @click="refresh">Refresh</v-btn>
-          <a href="https://github.com/MerantauWarrior/nuxt" target="_blank">Link on Git</a>
+          <v-divider class="my-4"></v-divider>
+          <a href="https://github.com/MerantauWarrior/nuxt" target="_blank">{{ $t('git_title') }}</a>
         </div>
       </v-card>
     </v-col>
