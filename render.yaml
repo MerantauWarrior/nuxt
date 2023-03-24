@@ -2,6 +2,6 @@ services:
   - type: web
     name: nuxt-example
     env: node
-    plan: starter
+    plan: free
     buildCommand: npm; npm run build
     startCommand: npm run start
