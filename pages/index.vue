@@ -6,6 +6,10 @@
         <h2>I am rendered on the {{ renderedOn }} side</h2>
         <div class="py-4" v-if="$auth.loggedIn">
           <pre>{{ user }}</pre>
+          <div>{{ user.login }}</div>
+          <div>{{ user.type }}</div>
+          <div>{{ user.plan.name }}</div>
+          <a :href="user.url">{{ user.login }}</a>
           <v-btn @click="$auth.logout()">logout</v-btn>
         </div>
         <div v-else>No user</div>
@@ -35,6 +39,7 @@
     created() {
       console.log(this.$auth.user)
       console.log(this.$store.state.auth.user)
+      this.user = this.$auth.user
     },
     methods: {
       refresh() {
