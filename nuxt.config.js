@@ -63,8 +63,22 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/i18n',
+    '@nuxtjs/auth-next',
+    '@nuxtjs/i18n'
   ],
+
+  router: {
+    middleware: ['auth']
+  },
+
+  auth: {
+    strategies: {
+      github: {
+        clientId: '24ab924c99404374e893',
+        clientSecret: '0aa6acee4af9c2db96f5e795abbbf2004ee0d83c'
+      },
+    }
+  },
 
   i18n: {
     locales: [
